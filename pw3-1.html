@@ -2,18 +2,32 @@
 <head>
   <title> Pertemuan 3 Styling dengan CSS </title>
 <style>
-input{
-  width:80%;
-  background:purple;
+input {
+  width: 80%;
+  background: purple;
 }  
-#username{ background:green;}
-.bg-grey{ background:grey;}
-  
-@media screen and (max-width: 700px) {
-[class*='col-'] { width: 50%; }
+
+#username { 
+  background: green; 
 }
+
+.bg-grey { 
+  background: grey; 
+}
+
+/* Gunakan class dengan lebih spesifik */
+form input, form select {
+  margin-bottom: 10px;
+  display: block;
+}
+
+/* Responsive */
+@media screen and (max-width: 700px) {
+  [class*="col-"] { width: 50%; }
+}
+
 @media screen and (max-width: 450px) {
-[class*='col-'] { width: 100%; }
+  [class*="col-"] { width: 100%; }
 }
 
 
